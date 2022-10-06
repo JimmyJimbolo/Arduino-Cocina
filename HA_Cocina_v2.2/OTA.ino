@@ -1,7 +1,7 @@
 void InitOTA() {
   //ArduinoOTA.setPort(8266);
-  ArduinoOTA.setHostname("COCINA");
-  ArduinoOTA.setPassword("cocina13");
+  ArduinoOTA.setHostname("HOST"); // Usuario con el que se identifica el arduino en OTA
+  ArduinoOTA.setPassword("PASS"); // Password para actualizar el codigo
   ArduinoOTA.onStart([]() {
     String type;
     if (ArduinoOTA.getCommand() == U_FLASH) {
