@@ -5,7 +5,7 @@ void setup() {
   InitOTA();
 
   // MQTT
-  MQTTClient.setServer("192.168.1.200", 1883);
+  MQTTClient.setServer("IP", 1883);  // Direccion IP del broquer MQTT
 
   // CLIMA
   dht.begin();
