@@ -1,6 +1,6 @@
 void MQTTconnect() {
   while (!MQTTClient.connected()) {
-    if (MQTTClient.connect("", "jimbo", "aquiles13")) {
+    if (MQTTClient.connect("", "USER", "PASS")) {  // Usuario y contraseña del broque MQTT
     } else {
       delay(250);
     }
